@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <title>Dimitar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url(krusevoo.jpg) no-repeat;
+            overflow: auto;
+            background-size: cover;
+            font-family: 'Lato', sans-serif;
+            height: 100vh;
+        }
+    nav{
+        background:rgba(0, 0, 0, 0.5);
+        width: auto;
+        overflow: auto;
+        margin: 0;
+        padding: 0;
+    
+        
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        float: left;
+        margin-left: 2em;
+    }
+    nav a{
+        width: auto;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        
+        font-size: 15px;
+        padding:20px 10px;
+
+    }
+    nav a:hover{
+        background: #778899;
+        color: black;
+    }
+    .center{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);  
+        width: 100%;
+        padding: 0 20px;
+    }
+    .contact
+    {
+        background: rgba(0, 0, 0, 0.8);
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 5px;
+        display: flex;
+    }
+    .inputparts{
+        display: flex;
+        flex-direction: column;
+        margin-right: 4%;
+
+    }
+    .inputparts,msg{
+        width: 48%;
+    } 
+    .inputparts .input, .msg textarea{
+        margin: 10px;
+        background: transparent;
+        border: none;
+        border-bottom: #778899 solid 1.5px;
+        color: #778899;
+        padding: 10px;
+        width: 100%;
+
+    }
+    .msg textarea{
+        height: 211px;
+    }
+    ::-webkit-input-placeholder{
+        color: #778899;
+    }
+    ::-moz-input-placeholder{
+        color:#778899;
+    }
+    ::-ms-input-placeholder{
+        color: #778899;
+    }
+    .button{
+        background: #778899;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        padding: 15px;
+        margin: 10px;
+        
+
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/newhome.html">Home</a></li>
+            <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/favorites.html">Favourites</a></li>
+            <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/Gallery.html">Gallery</a></li>
+            <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/Profile.html">Contact&amp;Infos</a></li>
+            <li><a href="#">Comments</a></li>
+        </ul>
+     </nav>
+     <div class="center">
+         <div class="contact">
+         <div class="inputparts">
+             <input type="text" placeholder="Name" class="input">
+             <input type="email" placeholder="Email Addres" class="input">
+             <input type="text" placeholder="Phone" class="input">
+             <input type="text" placeholder="Subject" class="input">
+         
+        </div>
+         <div class="msg">
+             <textarea placeholder="Message"></textarea>
+         
+            <div class="button">Send</div>
+         </div>
+         </div>
+         </div>
+         </body>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dimitar</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                background:url(krusevoo.jpg) no-repeat;
+                background-size: cover;
+                margin: 0;
+                font-family: 'Lato', sans-serif;
+            }
+            nav{
+                background:rgba(0, 0, 0,0.5);
+                width: 100%;
+                overflow: auto;
+                margin: 0;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+               
+            }
+            li{
+                float: left;
+                margin-left: 2em;
+             }
+            nav a{
+                width: auto;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                display: block;
+                font-size: 15px;
+                padding:20px 10px;
+            }
+            nav a:hover{
+                background: #778899;
+                color: black;
+            }
+            img{
+                border-radius: 50%;
+                width: 140px;
+                height: 140px;
+                margin-bottom: 20px;
+            }
+            .centar
+            {
+                margin: 50px 25px;
+                transform: translateX(25%);
+                width:1000px;
+                height: 150vh;
+                padding: 5px;
+                text-align: center;
+                background: rgba(0, 0, 0,0.8);
+                border-radius: 20px;
+
+            }
+            h2{
+                    color: white;
+                    margin: 50px 40px;
+                    text-transform: uppercase;
+                
+            }
+            span, p
+            {
+                
+                color:#778899;
+                margin-bottom: 50px;
+            } 
+            
+            .main{
+                color: #778899;
+                margin-top: 10px;
+                margin-bottom: 40px;
+            }
+            h4{
+                color: #778899;
+                margin-bottom: 40px;
+                margin-top: 40px;
+            }.suggest
+            {
+                background: none;
+                border: none;
+                border-bottom: 3px #778899 solid;
+                width:100%;
+                margin-top: 60px;
+                color: white;
+                text-align: center;
+                padding: 3px;
+                font-family: 'Lato' sans-serif;
+            }
+            input{
+                background: #778899;
+                width:100px;
+                float:right;
+                margin-top: 1em;
+                border-radius: 5px;
+                margin-left: 1em;
+                color: white;
+            }
+            a{
+                text-decoration: none;
+                color: #778899;
+
+            }
+            a:hover{
+                color: white;
+                transition: 0.4s;
+            }
+
+           
+           
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/newhome.html">Home</a></li>
+                <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/favorites.html">Favourites</a></li>
+                <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/Gallery.html">Gallery</a></li>
+                <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/Profile.html">Contact&amp;Infos</a></li>
+                <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/comments.html">Comments</a></li>
+            </ul>
+           
+        </nav>
+        <h2>Food</h2>
+        <div class="centar">
+        <h3 class="main">Daily consumption of my favorite food</h3>
+        <h4>Breakfast</h4>
+        <img class="milk" src="milk.jpg">
+        <span>Milk</span>
+        <img class="honey" src="honey.jpg">
+        <span>Honey</span>
+        <img class="butter" src="butter.jpg">
+        <span>Butter</span>
+        <img  class="cimet" src="cimet.jpg">
+        <span>Cinamon</span>
+       
+        <h4>Lunch</h4>
+        <p>Depends on the day but if I have to choose it will be a spinach</p>
+        <img class="spinach" src="spinach.png">
+        <span class="recept"><a href="https://www.delish.com/cooking/g2013/spinach/?slide=1">Recipes</a></span>
+         <h4>Fruits</h4>
+        <img class="apple" src="apple.jpg">
+        <span><a href="https://www.healthline.com/nutrition/10-health-benefits-of-apples">Benefits of apples (click)</a></span>
+        <img class="banana" src="banana.jpg">
+        <span><a href="https://www.healthline.com/nutrition/11-proven-benefits-of-bananas#TOC_TITLE_HDR_2">Benefits of bananas (click)</a></span>
+        <img class="dates" src="dates.jpg">
+        <span><a href="https://www.healthline.com/nutrition/benefits-of-dates">Benefits of dates (click)</a></span>
+       <textarea class="suggest" placeholder="Type a suggestion"></textarea>
+       <input type="submit" name="submit">
+       </div>
+        
+    </body>
+</html>
