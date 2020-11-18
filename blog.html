@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dimitar</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+     
+
+            
+            body{
+               background: url(kr3.jpg) no-repeat;
+            overflow: auto;
+            margin:0;
+            background-size: cover;
+            font-family: 'Lato', sans-serif;
+        
+
+            
+            
+        }
+        nav{
+                background:rgba(0, 0, 0,0.5);
+                width: 100%;
+                overflow: auto;
+                margin: 0;
+             
+
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+               
+            }
+             nav li{
+                float: left;
+                margin-left: 2em;
+             }
+            nav a{
+                width: auto;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                display: block;
+                font-size: 15px;
+                padding:20px 10px;
+            }
+            nav a:hover{
+                background: #778899;
+                color: black;
+            }
+            img{
+                width: 580px;
+                height: 200px;
+                
+                border-top-left-radius:15px;
+                border-top-right-radius:15px;
+             
+            }
+           
+            .myblog{
+                float: left;
+                background: rgba(0, 0, 0,0.8);
+                border-radius: 15px;
+                height:fit-content;
+                margin-left: 80px;
+                margin-right: 30px;
+                margin-top: 20px;
+                width: 580px;
+                color: #778899;
+                
+               
+            }
+            .your_blog{
+                margin-top: 20px;
+                background: rgba(0, 0, 0,0.8);
+                float: right;
+                margin-right: 80px;
+                width: 580px;
+                border-radius: 15px;
+            }
+            #button,#button2{
+                float: left;
+                margin-top: 25px;
+                background:#778899;
+                color:rgba(0, 0, 0,0.8);
+                float: right;
+                position: relative;
+                border: none;
+                margin-right: 1em;
+                margin-bottom: 1em;
+                border-radius: 20px;
+                
+
+            }
+            #button:hover, #button2:hover{
+                color: #778899;
+                background: white;
+                transition: 1s;
+            }
+            h2{
+                margin-top: 20px;
+                margin-left: 30px;
+                text-transform: uppercase;
+                color: white;
+            }
+            .title{
+            position:absolute;
+            top: 165px;
+            left: 87px;
+            color: white;
+            font-style: oblique;
+            }
+            .date{
+                position: absolute;
+                top: 300px;
+                left: 550px;
+                color: white;
+                font-style: oblique;
+            }
+            .paragraph
+            {
+               
+                margin-left: 3px;
+                overflow:auto;
+                height: 40vh;
+                
+            }
+            textarea{
+        height: 150px;
+        width: 100%;
+        
+                background: transparent;
+                color: #778899;
+        padding: 10px;
+        border:#778899 solid 1px ;
+      
+            }
+            #name{
+                background: transparent;
+             border-radius: 15px;
+             margin-left: 10px;
+             margin-top: 10px;
+                border:#778899 solid 1px;
+                margin-bottom: 5px;
+                padding-left: 5px;
+                
+            }
+#blog2_text,#name{
+    color:#778899 ;
+}
+
+
+
+#namee,#datee{
+    float: right;
+    font-style: oblique;
+    color: white;
+}
+
+            
+            </style>
+            <script>
+function start()
+{
+    var button2=document.getElementById("button2");
+    button2.addEventListener("click",post,false);
+
+}
+function post()
+{
+                 var today = new Date();
+                 var dd = String(today.getDate()).padStart(2, '0');
+                 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                 var yyyy = today.getFullYear();
+                today = dd + '.' + mm + '.' + yyyy;
+                var blog2_text=document.querySelector('.blog2 #blog2_text');
+                var textarea=document.getElementById("textarea");
+                var name=document.getElementById("name");
+               
+                 var list_item = document.createElement ("l1");
+              
+                 list_item.innerHTML ="<p>"+ textarea.value + "<br>"+ "<label style='color: white; font-style:oblique; font-size:0.7em;'>"+ name.value + "</label><br>"+"<label style='color: white; font-style:oblique; font-size:0.7em;'>"+ today+ "</label></p>";
+           
+                   blog2_text.append(list_item); 
+                   textarea.value="";
+                   name.value="";
+}
+
+window.addEventListener("load",start,false);
+
+
+
+            </script>
+             </head>
+<body>
+    <nav>
+             <ul>
+                     <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/newhome.html">Home</a></li>
+                     <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/favorites.html">Favourites</a></li>
+                     <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/gaelrijaupdate.html">Gallery</a></li>
+                     <li><a href="#">Blog</a></li>
+                     <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/Profile.html">Contact&amp;Infos</a></li>
+                     <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/comments.html">Comments</a></li>
+            </ul>
+                    
+        </nav>
+
+
+                 <h2>Blog</h2>
+
+
+                 <div class="myblog">
+                     <div class="blog">
+                     <div class="image"><img src="tehnology.jpg" alt="blog_image"></div>
+                     <div class="title"><storng>The positive and negative effects of technology on children</storng></div>
+                     <div class="date"><p id="date">15.11.2020</p></div>
+                     <div class="paragraph"><p><strong>Positive:<br> Enhances Learning</strong><br><br>
+                    Over the past few years, technology has become integrated into the classroom to enhance the learning experience for children. Technologies such as Smartboards, document cameras, Apple TVs, and even 3D printers are now incorporated into educational lessons to boost collaboration and engage students in the learning process. With increased collaboration in the classroom, teachers and students have increased creativity and project-based learning opportunities that make academic instruction more meaningful.<br><br><strong> Problem-Solving Skills</strong><br><br>
+
+                    Have you ever heard of the term “survival mode?” It’s a gameplay function in many kids’ video games where the player is tasked with staying alive as long as possible to outlast opponents. For example, in the popular video game Minecraft, players are dropped into new and different environments and must immediately build shelter and collect items like food, in order to survive and outlive their opponents. Not to mention, an entire day in Minecraft lasts just 10 minutes, so players must make good decisions quickly.<br><br><strong>Negative:</strong><br>
+
+                   <strong> Diminishes Relationships and Social Skills</strong><br><br>
+                    
+                    As children use mobile devices more and more, they’re more apt to be virtually connected with family and friends, rather than spending time together physically; they’re more likely to text, chat on social media, or connect through online gaming than actually meeting them in person.<br><br><strong>Stimulates Health Issues</strong><br><br>
+
+                    The overuse of mobile devices can be harmful to children’s health, as the more they use mobile devices, the less physical activities they do. In addition, when children choose to play on their devices over physical activity, they often couple their activity with mindless snacking and other unhealthy habits.</p></div>
+                    </div>
+                    <form action="#">
+                       <a href="https://www.thesilverlining.com/westbendcares/blog/the-positive-and-negative-effects-of-technology-on-children" ><input id="button" type="button" value="Read more" ></a>
+                    </form>
+                  </div>
+
+
+                
+                  <div class="your_blog">
+                      <div class= "blog2">
+                          <ul id="blog2_text"> </ul>
+                             
+                             
+                          
+                      </div>
+                      <div class="textarea">
+                          <form action="#">
+                              <input id="name" type="text" placeholder="name">
+                              <textarea id="textarea" placeholder="Write your opinion"></textarea>
+                              <input id="button2" type="button" value="Post">
+                          </form>
+                      </div>
+                </div>
+</body>
+
+
+
+
+
+
+
+
+
