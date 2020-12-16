@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Dimitar</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
-        <style>
-            *{
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://kit.fontawesome.com/488ba0de98.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dimitar</title>
+    <style type="text/css">
+    
+    *{
                 box-sizing: border-box;
             }
             body{
             background: url(kr3.jpg) no-repeat;
-            overflow: auto;
             margin:0;
             background-size: cover;
             font-family: 'Lato', sans-serif;
-            height: 220vh;
+            height:auto;
 
-            
-            
-        }
-            
-            nav{
+      }
+      nav{
                 background:rgba(0, 0, 0,0.5);
                 width: 100%;
                 overflow: auto;
@@ -55,229 +51,372 @@
                 background: #778899;
                 color: black;
             }
-           .center{
-                background: rgba(0, 0, 0,0.8);
+      
+            .btn{
+                color:  #778899;
+                background: none;
+                border: none;
+                margin-left: 1em;
+                transform: translateY(-360%);
+                margin-left: 15%;
+                
+              
+               
+            }
+            .btn:hover{
+              color: white;
+            }
+
+      .fa-heart {
+        color: #778899;
+        
+      }
+      .fa-heart:hover{
+        color: white;
+      }
+      .center {
+        background: rgba(0, 0, 0,0.8);
                 text-align: center;
-                margin-top: 50px;
+                margin-top: 30px;
                 margin-right: 220px;
                 margin-left: 220px;
                 border-radius: 5px;
                 height: max-content;
-             
-             
-
-            }
-            
-              
-            
-            img{
-                margin-right: 1em;
+      }
+      
+      .image {
+        margin-right: 1em;
                 margin-left: 0.5em;
                 width: 300px;
                 height: 300px;
                 border-radius: 5px;
                 margin-top: 20px;
-            }
-             #comment, #comment1, #comment2{
-                 background: none;
-                 border:none;
-                 border-bottom: 2px solid #778899;
-                
-                 padding-left:0.6em;
-                 color: #778899;
-                 margin-right: 1em;
-
-            }
-            #button, #button1, #button2{
-                border: none;
-                color:#778899;
-                background: none;
-                margin-right: 2em;
-                font-size: 1em;
-
-            }
-           #button:hover, #button1:hover, #button2:hover{
-                color:white;
-                transition: 0.7s;
-               
-               
-                
-            }
-           i{
-               color: #778899;
-               font-size: 4em;
-               margin-right: 1em;
-           }
-           i:hover
-           {
-               color: white;
-               transition: 0.7s;
-           }
-           label{
-               color: #778899;
-           }
-           summary{
-               color: #778899;
-               margin-right: 200px;
-           }
-           #comments,  #comments1,  #comments2{
-            color: #778899;
-            margin-top: 1em;
+      }
+      .like {
+        display: block;
+        margin-top: 30px;
+        margin-left: 25%;
+        margin-right: auto;
+        width: 5%;
+      }
+      .input {
+        display: block;
+        margin-top: 30px;
+        margin-left: 35%;
+        margin-right: auto;
+        width: 40%;
+      }
+      
+      
+      .input{
+      width: 200px;
+        background: none;
+        border: none;
+        border-bottom:#778899 solid 1px ;
+        color: #778899;
+      transform: translateY(-270%);
         
-         
-            
-           }
-           img:hover{
-               width: 370px;
-               height: 370px;
-               transition: 1s;
-           }
-           .text{
+      
+      }
+      .comParts,#counter1,#counter2,#counter3{
+        color:#778899 ;
+      }
+      .like{
+        color: #778899;
+        margin-left: 650px;
+        font-size: 1em;
+     
+      }
+     summary{
+       color:#778899 ;
+       
+       font-size: 0.9em;
+       transform: translate(-11%,-400%);
+       
+     }
+     .text{
                     color: white;
                     margin: 20px 30px;
                     text-transform: uppercase;
            }
-         
+  .comParts{
+    font-size: 0.8em;
+    transform: translate(0,-30%);
+  }
+  .slider{
+    font-style: none;
+    color: #778899 ;
+    margin-left: 30px;
+    font-style: oblique;
+    list-style:none;
+  }
+  .slider:hover{
+    color: white;
+    
+  }
+  
+  
+    </style>
+  </head>
+  <body onload="load()">
+    <nav>
+      <ul>
+          <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/newhome.html">Home</a></li>
+          <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/favorites.html">Favourites</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/blog.html">Blog</a></li>
+          <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/Profile.html">Contact&amp;Infos</a></li>
+          <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/comments.html">Comments</a></li>
+      </ul>
+     
+  </nav>
+  <h2 class="text">Gallery</h2>
+  <a class="slider" href="file:///C:/Users/Taki/Desktop/PersonalWeb/slider.html">Go to slideshow</h3></a>
+      <div class="center">
+        <img class="image" src="winter.jpg" alt="winter" />
+        <div class="like">
+          <p><i onclick="incerementLikes1(this)" class="fa fa-heart" id="like1"></i> <label id="counter1"></label></p></div>
+        
+        <div id="first" class="container">
+          <input class="input" type="text" id="komentar1"placeholder="Comment"/>
+          <button class="btn" onclick="storeKomentar1()">Post</button>
+          <br>
+          <details>
+            <summary>Comments</summary> 
+          <div id="firstPart" class="comParts"></div>
+          </details>
+        </div>
+      </div>
 
-           
+      <div class="center">
+        <img class="image" src="prilep.jpg" alt="sunset" />
+        <div class="like">
+          <i onclick="incerementLikes2(this)" class="fa fa-heart" id="like2"></i>
+          <label id="counter2"></label>
+        </div>
+        <div id="second" class="container">
+          <input class="input" type="text" id="komentar2" placeholder="Comment"/>
+          <button class="btn" onclick="storeKomentar2()">Post</button>
+          <br /><br />
+          <details>
+            <summary>Comments</summary> 
+          <div id="secondPart" class="comParts"></div>
+          </details>
+        </div>
+      </div>
 
-        </style>
-        <script>
-            var i=1,i1=1,i2=1,i3=1;
-           
-            function start(){
-                var like = document.querySelector('.center #like');
-                var like1 = document.querySelector('.center #like1');
-                var like2 = document.querySelector('.center #like2');
-                var button=document.querySelector('.center #button');
-                var button1=document.querySelector('.center #button1');
-                var button2=document.querySelector('.center #button2');
-                like.addEventListener("click",incrementLikes,false);
-                like1.addEventListener("click",incrementLikes1,false);
-                like2.addEventListener("click",incrementLikes2,false);
-                button.addEventListener("click",typeComment,false);
-                button1.addEventListener("click",typeComment1,false);
-                button2.addEventListener("click",typeComment2,false);
-                var number=document.getElementById("number");
-                var comment=document.getElementById("comment");
-               
-            
-            function incrementLikes()//Za sekoja slika posebna funkcija, na toj nacin se obidov da go resam like i comment delot
-            {
-              number.innerHTML=i;
-              i++;
-            }
-            function incrementLikes1()
-            {
-              number1.innerHTML=i1;
-              i1++;
-            }
-            function incrementLikes2()
-            {
-              number2.innerHTML=i2;
-              i2++;
-            }
-            function typeComment()
-            {
-                
-                var today = new Date();
-                 var dd = String(today.getDate()).padStart(2, '0');
-                 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-                 var yyyy = today.getFullYear();
-                  today = dd + '.' + mm + '.' + yyyy;
-                
-               
-                 var comments=document.querySelector('.center #comments');
-                 var list_item = document.createElement ("l1");
-                 list_item.innerHTML ="<p>"+ comment.value + Array(30).fill('\xa0').join('') +" <label style='font-size: 0.7em'>" + today +  "</label>"+ "</p>";
-                   comments.append(list_item); 
-                   comment.value="";
-}
-function typeComment1()
-            {
-                
-                var today = new Date();
-                var dd = String(today.getDate()).padStart(2, '0');
-                var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-                var yyyy = today.getFullYear();
-                 today = dd + '.' + mm + '.' + yyyy; 
-                var comments1=document.querySelector('.center #comments1');
-                 var list_item1 = document.createElement ("l2");
-                 list_item1.innerHTML ="<p>"+ comment1.value + Array(30).fill('\xa0').join('') +" <label style='font-size: 0.7em'>" + today +  "</label>"+ "</p>";
-                   comments1.append(list_item1); 
-                   comment1.value="";
-}
-function typeComment2()
-            {
-                
-                var today = new Date();
-                var dd = String(today.getDate()).padStart(2, '0');
-                var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-                var yyyy = today.getFullYear();
-               today = dd + '.' + mm + '.' + yyyy;
-                var list_item = document.createElement ("l1");
-                var comments2=document.querySelector('.center #comments2');
-                list_item.innerHTML ="<p>"+ comment2.value + Array(30).fill('\xa0').join('') +" <label style='font-size: 0.7em'>" + today +  "</label>"+ "</p>";
-                   comments2.append(list_item);
-                   comment2.value="";
-}
-            }
-window.addEventListener("load",start,false);
-        </script>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/newhome.html">Home</a></li>
-                <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/favorites.html">Favourites</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/blog.html">Blog</a></li>
-                <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/Profile.html">Contact&amp;Infos</a></li>
-                <li><a href="file:///C:/Users/Taki/Desktop/PersonalWeb/comments.html">Comments</a></li>
-            </ul>
-           
-        </nav>
-        <h2 class="text">Gallery</h2>
-        <div class="center">
-        <ul id="lista">
+      <div class="center">
+        <img class="image" src="slika1.jpg" alt="slika1" />
+        <div class="like">
+          <i onclick="incerementLikes3(this)" class="fa fa-heart" id="like3"></i>
+          <label id="counter3"></label>
+        </div>
+        <div id="third" class="container">
+          <input class="input" type="text" id="komentar3" placeholder="Comment" />
+          <button class="btn" onclick="storeKomentar3()">Post</button>
+          <br /><br />
+          <details>
+            <summary>Comments</summary> 
+          <div id="thirdPart" class="comParts"></div>
+          </details>
+        </div>
+      </div>
+    </div>
 
+    <script>
+      var comments11;
+      var comments22;
+      var comments33;
 
-            
-            <li id="slika"><img src="winter.jpg" alt="slika1">
-            <p><input id="comment" type="text" placeholder="Comment"><input id="button" type="button" value="post">
-                <label id="like"><i class="fa fa-heart"></i></label><label id="number">0</label></p>
-                <details>
-               <summary>Comments</summary> 
-               <ul id="comments"></ul>
-               </details>
-             </li>
+      if (window.localStorage.getItem("comment11")) {
+        comments11 = JSON.parse(window.localStorage.getItem("comment11"));
+      } else {
+        comments11 = [];
+      }
+      if (window.localStorage.getItem("comment22")) {
+        comments22 = JSON.parse(window.localStorage.getItem("comment22"));
+      } else {
+        comments22 = [];
+      }
+      if (window.localStorage.getItem("comment33")) {
+        comments33 = JSON.parse(window.localStorage.getItem("comment33"));
+      } else {
+        comments33 = [];
+      }
 
+      var like1 = document.getElementById("like1");
+      var like2 = document.getElementById("like2");
+      var like3 = document.getElementById("like3");
 
+      var komentar1 = document.getElementById("komentar1");
+      var komentar2 = document.getElementById("komentar2");
+      var komentar3 = document.getElementById("komentar3");
 
-             <li id="slika"><img src="prilep.jpg" alt="slika1">
-                <p><input id="comment1" type="text" placeholder="Comment"><input id="button1" type="button" value="post">
-                    <label id="like1"><i class="fa fa-heart"></i></label><label id="number1">0</label></p>
-                    
-                    <details>
-                        <summary>Comments</summary> 
-                        <ul id="comments1"></ul>
-                        </details>
-                   </li>
+      var counter1 = document.getElementById("counter1");
+      var counter2 = document.getElementById("counter2");
+      var counter3 = document.getElementById("counter3");
 
+      i1 = window.localStorage.getItem("like1");
+      i2 = window.localStorage.getItem("like2");
+      i3 = window.localStorage.getItem("like3");
 
-
-                   <li id="slika"><img src="slika1.jpg" alt="slika1">
-                    <p><input id="comment2" type="text" placeholder="Comment"><input id="button2" type="button" value="post">
-                        <label id="like2"><i class="fa fa-heart"></i></label><label id="number2">0</label></p>
-                        <details>
-                            <summary>Comments</summary> 
-                            <ul id="comments2"></ul>
-                            </details>
-                       </li>
-                     
-             </ul>
-        </div>    
-        </body>
-        </html>            
-            
+      function incerementLikes1(event) {
+        i1++;
+        counter1.innerHTML = i1;
+        window.localStorage.setItem("like1", i1);
        
+      }
+
+      function incerementLikes2(event) {
+        i2++;
+        counter2.innerHTML = i2;
+        window.localStorage.setItem("like2", i2);
+       
+      }
+
+      function incerementLikes3(event) {
+        i3++;
+        counter3.innerHTML = i3;
+        window.localStorage.setItem("like3", i3);
+        
+      }
+
+      function storeKomentar1() {
+        var date = new Date().toLocaleString();
+        var singleComment = { value: komentar1.value, date: date };
+
+        comments11.push(singleComment);
+        console.log(comments11);
+        window.localStorage.setItem("comment11", JSON.stringify(comments11));
+        komentar1.value="";
+        load();
+      }
+
+      function storeKomentar2() {
+        var date = new Date().toLocaleString();
+        var singleComment2 = { value: komentar2.value, date: date };
+
+        comments22.push(singleComment2);
+        console.log(comments22);
+        window.localStorage.setItem("comment22", JSON.stringify(comments22));
+        komentar2.value="";
+        load();
+      }
+
+      function storeKomentar3() {
+        var date = new Date().toLocaleString();
+        var singleComment3 = { value: komentar3.value, date: date };
+
+        comments33.push(singleComment3);
+        console.log(comments33);
+        window.localStorage.setItem("comment33", JSON.stringify(comments33));
+        komentar3.value="";
+        load();
+      }
+
+      function load() {
+        var first = document.getElementById("firstPart");
+        while (first.firstChild) {
+          first.removeChild(first.lastChild);
+        }
+
+        var second = document.getElementById("secondPart");
+        while (second.firstChild) {
+          second.removeChild(second.lastChild);
+        }
+
+        var third = document.getElementById("thirdPart");
+        while (third.firstChild) {
+          third.removeChild(third.lastChild);
+        }
+
+        var comments11 = JSON.parse(window.localStorage.getItem("comment11"));
+        var comments22 = JSON.parse(window.localStorage.getItem("comment22"));
+        var comments33 = JSON.parse(window.localStorage.getItem("comment33"));
+
+        console.log(comments11);
+        if (comments11) {
+          comments11.forEach((element) => {
+            var y = document.createElement("label");
+            var x = document.createElement("br");
+            var p = document.createElement("label");
+            var z = document.createElement("label");
+
+            var node = document.createTextNode(element.value);
+            var nodeDate = document.createTextNode(element.date);
+            y.style.fontSize = "1.2em";
+            z.style.fontStyle="oblique";
+            z.style.fontSize="0.8em";
+            y.style.marginRight="50px";
+            y.appendChild(node);
+            z.appendChild(nodeDate);
+
+            document.getElementById("firstPart").appendChild(y);
+            document.getElementById("firstPart").appendChild(x);
+            document.getElementById("firstPart").appendChild(p);
+            document.getElementById("firstPart").appendChild(z);
+            document.getElementById("firstPart").appendChild(x);
+          });
+        }
+
+        if (comments22) {
+          comments22.forEach((element) => {
+            var y = document.createElement("label");
+            var x = document.createElement("br");
+            var p = document.createElement("label");
+            var z = document.createElement("label");
+
+            var node = document.createTextNode(element.value);
+            var nodeDate = document.createTextNode(element.date);
+            y.style.fontSize = "1.2em";
+            z.style.fontStyle="oblique";
+            z.style.fontSize="0.8em";
+            y.style.marginRight="50px";
+            y.appendChild(node);
+            z.appendChild(nodeDate);
+
+            document.getElementById("secondPart").appendChild(y);
+            document.getElementById("secondPart").appendChild(x);
+            document.getElementById("secondPart").appendChild(p);
+            document.getElementById("secondPart").appendChild(z);
+            document.getElementById("secondPart").appendChild(x);
+
+            
+          });
+        }
+
+        if (comments33) {
+          comments33.forEach((element) => {
+            var y = document.createElement("label");
+            var x = document.createElement("br");
+            var p = document.createElement("label");
+            var z = document.createElement("label");
+
+            var node = document.createTextNode(element.value);
+            var nodeDate = document.createTextNode(element.date);
+            y.style.fontSize = "1.2em";
+            y.style.marginRight="50px";
+            z.style.fontSize="0.8em";
+            z.style.fontStyle="oblique";
+            y.appendChild(node);
+            z.appendChild(nodeDate);
+
+            document.getElementById("thirdPart").appendChild(y);
+            document.getElementById("thirdPart").appendChild(x);
+            document.getElementById("thirdPart").appendChild(p);
+            document.getElementById("thirdPart").appendChild(z);
+            document.getElementById("thirdPart").appendChild(x);
+
+         
+          });
+        }
+
+        counter1.innerHTML = window.localStorage.getItem("like1");
+        counter2.innerHTML = window.localStorage.getItem("like2");
+        counter3.innerHTML = window.localStorage.getItem("like3");
+
+      }
+      
+    </script>
+  </body>
+</html>

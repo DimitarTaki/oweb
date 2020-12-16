@@ -105,13 +105,23 @@
         border-radius: 5px;
         cursor: pointer;
         text-transform: uppercase;
+        color: white;
         padding: 15px;
         margin: 10px;
+        width: 130px;
         
 
     }
+    .button:hover
+    {
+      background: white;
+      transition: 0.4s;
+      color: #778899 ;
+    }
 
     </style>
+   
+
 </head>
 <body>
     <nav>
@@ -124,20 +134,43 @@
             <li><a href="#">Comments</a></li>
         </ul>
      </nav>
+     <form>
      <div class="center">
          <div class="contact">
          <div class="inputparts">
-             <input type="text" placeholder="Name" class="input">
-             <input type="email" placeholder="Email Addres" class="input">
-             <input type="text" placeholder="Phone" class="input">
-             <input type="text" placeholder="Subject" class="input">
+             <input id ="name" type="text" placeholder="Name" class="input" required>
+             <input id="email" type="email" placeholder="Email Addres" class="input" required>
+             <input id="phone"  type="text" placeholder="Phone" class="input" required>
+             <input id="surname" type="text" placeholder="Surname" class="input" required>
          
         </div>
          <div class="msg">
-             <textarea placeholder="Message"></textarea>
-         
-            <div class="button">Send</div>
+             <textarea id="message" placeholder="Message" required></textarea>
+             <button class="button" onclick="alert()">Send</button>
+           
+         </div>
+        
          </div>
          </div>
-         </div>
+         </form>
+         <script>
+          var name=document.getElementById("name");
+          var email=document.getElementById("email");
+          var phone=document.getElementById("phone");
+          var surname=document.getElementById("surname");
+          var message=document.getElementById("message");
+          function alert()
+          {
+              if(name.value==0||email.value==0||phone.value==0||surname.value==0||message.value==0)
+              {
+                  window.alert("Empty form");
+              }
+              window.prompt("Subject");
+              name.value="";
+              email.value="";
+              phone.value="";
+              surname.value="";
+              message.value="";
+          }
+         </script>
          </body>

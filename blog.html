@@ -169,6 +169,7 @@
             
             </style>
             <script>
+              
 function start()
 {
     var button2=document.getElementById("button2");
@@ -185,12 +186,12 @@ function post()
                 var blog2_text=document.querySelector('.blog2 #blog2_text');
                 var textarea=document.getElementById("textarea");
                 var name=document.getElementById("name");
-               
-                 var list_item = document.createElement ("l1");
-              
+                var list_item = document.createElement ("l1");
+                
                  list_item.innerHTML ="<p>"+ textarea.value + "<br>"+ "<label style='color: white; font-style:oblique; font-size:0.7em;'>"+ name.value + "</label><br>"+"<label style='color: white; font-style:oblique; font-size:0.7em;'>"+ today+ "</label></p>";
-           
-                   blog2_text.append(list_item); 
+                
+                   blog2_text.append(list_item);
+        
                    textarea.value="";
                    name.value="";
 }
